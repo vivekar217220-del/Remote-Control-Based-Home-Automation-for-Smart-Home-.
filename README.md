@@ -12,7 +12,9 @@ IR remote → IR receiver → NEC command decoder → relay outputs
 
 The [Arduino source](Home_Automated_Code) uses pin-change interrupts to capture the timing of incoming pulses. A state machine decodes the NEC command and makes it available to the automation logic.
 
-The sketch maps remote buttons to TV, light, fan, and motor outputs. Its LCD displays the selected action and prompts for the next command.
+## What to observe
+
+A supported remote command changes one relay output and updates the LCD. The simulation provides separate on and off commands for the TV, light, fan, and motor outputs.
 
 ## Repository contents
 
